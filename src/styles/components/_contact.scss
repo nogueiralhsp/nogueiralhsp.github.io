@@ -1,0 +1,45 @@
+// Left container
+.contact-page-left-container {
+     margin: auto;
+     text-align: center;
+}
+
+.left-container-icon {
+     font-size: 50px;
+     margin-top: $xl-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+     .contact-page-content {
+          margin-top: $xl-size;
+          display: flex;
+          justify-content: center;
+          gap: $l-size;
+     }
+
+     .left-container-icon {
+          font-size: 150px;
+     }
+}
+.contact-page-form-container {
+     min-width: 65%;
+}
+.contact-form {
+     display: flex;
+     flex-direction: column;
+     max-width: 60rem;
+     margin: 0 auto 0 auto;
+}
+.contact-form input {
+     margin-bottom: 2rem;
+     border-radius: 1rem;
+     height: 4rem;
+}
+.contact-form [type="submit"] {
+     background-color: rgb(0, 85, 255);
+     border-color: $blue;
+     color: $white;
+     width: 50%;
+     margin: $m-size auto;
+     font-size: $m-size;
+}

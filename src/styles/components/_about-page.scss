@@ -1,0 +1,39 @@
+.about-page-content {
+     margin-top: 5rem;
+     margin-bottom: 5rem;
+}
+
+.about-main-content {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+@media (max-width: $desktop-breakpoint) {
+     .about-main-content {
+          display: flex;
+          flex-direction: column;
+     }
+}
+
+.about-page-avatar-container {
+     min-width: 50%;
+     display: flex;
+     justify-content: center;
+}
+.about-page-avatar {
+     height: 300px;
+     border-radius: 3rem;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: red;
+}
+.about-page-avatar:hover {
+     transform: rotate(330deg);
+     border-radius: 9rem;
+}
+.about-page-description h1,h3 {
+     margin: 0 0 0 0;
+     padding: 0;
+     color: $off-white
+}

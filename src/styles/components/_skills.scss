@@ -1,0 +1,45 @@
+.skill-page-content {
+     color: $off-white;
+     min-height: 50rem;
+     margin-top: $xl-size;
+     text-align: center;
+}
+
+.web-dev-container {
+     margin-bottom: 10rem;
+}
+
+.skill-icon-container {
+     display: flex;
+     gap: $xl-size;
+     justify-content: center;
+}
+.skill-page-content h1 {
+     color: $off-white;
+     text-align: center;
+}
+
+.skill-page-icon {
+     color: $off-white;
+     font-size: $xl-size;
+     padding: $s-size;
+}
+
+.skill-page-icon:hover {
+     color: $green;
+     font-size: $xl-size * 1.2;
+}
+
+//Handling Mobile Screen
+@media (max-width: $desktop-breakpoint) {
+     .skill-page-content {
+          transform: scale(0.75);
+          margin: auto;
+          text-align: center;
+     }
+     .skill-icon-container {
+          display: flex;
+          gap: $l-size;
+          justify-content: center;
+     }
+}

@@ -1,0 +1,78 @@
+.header {
+     text-align: center;
+}
+.header-name h2 {
+     font-size: 2rem;
+     text-align: left;
+     margin: 0;
+     padding: 0.5rem 0 0 3rem;
+     color: $off-white;
+}
+.header-name h4 {
+     font-size: 1rem;
+     text-align: left;
+     margin: 0;
+     padding: 0.5rem 0 0 3rem;
+     color: $off-white;
+}
+
+.header-name a {
+     text-decoration: none;
+     color: $off-white;
+}
+/*      here starts navigation menu       */
+.navigation-menu {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+}
+
+
+.menu-FaBars{
+     display: none;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+     display: inline-block;
+}
+
+// /*Style for menu links*/
+.mobile-menu li a {
+     display: flex;
+     justify-content: center;
+     min-width: 170px;
+     color: $off-white;
+     background: $dark-blue;
+     text-decoration: none;
+     padding: $vs-size;
+     -webkit-transition: all 0.4s ease 0s;
+     -moz-transition: all 0.4s ease 0s;
+     -ms-transition: all 0.4s ease 0s;
+     -o-transition: all 0.4s ease 0s;
+     transition: all 0.4s ease 0s;
+}
+
+// /*Hover state for top level links*/
+.mobile-menu li:hover a {
+     background-color: $dark-green;
+}
+
+//**** Mobile formating hiding top menu    ****//
+@media (max-width: $desktop-breakpoint) {
+     .navigation-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+     }
+     .menu-button{
+          display: flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+     
+     }
+     .menu-FaBars{
+          display: flex;
+     }
+}

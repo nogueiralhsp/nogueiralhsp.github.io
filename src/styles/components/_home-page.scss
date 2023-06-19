@@ -1,0 +1,36 @@
+.main-content {
+    margin-bottom: 5rem;
+}
+
+.home-page-description {
+    text-align: center;
+}
+
+.home-page-description a {
+    color: $white;
+}
+
+.MuiGrid-root :hover {
+    transform: scale(1.05);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .home-page-description {
+        transform: scale(0.85);
+    }
+    .MuiGrid-root {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.card {
+    min-height: 35rem;
+    max-width: 25rem;
+}

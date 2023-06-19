@@ -1,0 +1,15 @@
+//Keep Settings at the top
+@import "./base/settings";
+
+//Commonly shared with styles throughout the page
+@import "./base/base";
+@import "./base/button";
+
+//Componets Styles
+@import "./components/about-page";
+@import "./components/content";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/home-page";
+@import "./components/skills";
+@import "./components/contact";
